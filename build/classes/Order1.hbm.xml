@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 4, 2017 6:58:43 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="Mypack.Order1" table="ORDER1">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <many-to-one name="empid" class="Mypack.Register" fetch="join" lazy="false" >
+            <column name="EMPID" />
+        </many-to-one>
+        <many-to-one name="mid" class="Mypack.Menu" fetch="join" lazy="false" >
+            <column name="MID" />
+        </many-to-one>
+        <property name="menup" type="java.lang.String" >
+            <column name="PRICE" />
+        </property>
+        <property name="mitem" type="java.lang.String" >
+            <column name="MITEM" />
+        </property>
+        <property name="date1" type="java.lang.String">
+            <column name="DATE1" />
+        </property>
+        <property name="qun" type="java.lang.String">
+            <column name="QUN" />
+        </property>
+    </class>
+</hibernate-mapping>

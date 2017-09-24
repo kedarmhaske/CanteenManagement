@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+
+	<bean name="/register.html" class="Mypack.RegisterController"></bean>
+	<bean name="/login.html" class="Mypack.LoginController"></bean>
+	<bean name="/forgot" class="Mypack.ForgotControler"></bean>
+	<bean name="/conform" class="Mypack.ConformControler"></bean>
+	<bean name="/admin.html" class="Mypack.AdmL"></bean>
+	<bean name="/can.html" class="Mypack.Canl"></bean>
+	 <bean name="/odr" class="Mypack.Ordercon"></bean> 
+	<bean name="/menu" class="Mypack.Menucon"></bean>
+  <bean name="/show" class="Mypack.ShowMenuCon"></bean> 
+	<bean name="/showoder" class="Mypack.ShowOrderCon"></bean>
+	<bean name="/sendorder" class="Mypack.ShowReportAdmin"></bean>
+	<bean name="/menuadmincard" class="Mypack.AdminMenuCard"></bean>
+	<bean name="/emporder" class="Mypack.EmployeeOrder"></bean>
+	<bean name="/showempallorder" class="Mypack.EmployeeAllOrders"></bean>
+	<bean name="/valid.html" class="Mypack.SpecificEmp"></bean>
+	<bean name="/showdatewise" class="Mypack.DatewiseOrder"></bean>
+	<bean id="view" name="view"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/"></property>
+		<property name="suffix" value=".jsp"></property>
+	</bean>
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+</beans>

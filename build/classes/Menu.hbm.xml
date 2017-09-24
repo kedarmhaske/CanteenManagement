@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 2, 2017 10:10:59 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="Mypack.Menu" table="MENU">
+        <id name="mid" type="java.lang.String">
+            <column name="MID" />
+            <generator class="assigned" />
+        </id>
+        <property name="mitem" type="java.lang.String">
+            <column name="MITEM" />
+        </property>
+        <property name="menup" type="java.lang.String">
+            <column name="MENUP" />
+        </property>
+    </class>
+</hibernate-mapping>
